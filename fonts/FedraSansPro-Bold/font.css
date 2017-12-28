@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'FedraSansPro-Bold';
+  src: url('FedraSansPro-Bold.eot');
+  src: url('FedraSansPro-Bold.woff') format('woff'),
+       url('FedraSansPro-Bold.ttf') format('truetype'),
+       url('FedraSansPro-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

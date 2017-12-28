@@ -1,0 +1,137 @@
+@import "bourbon/bourbon"
+
+/* 	GENERAL STYLE */
+$color: #000
+
+//Убрать стрелки у формы телефона
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+// Для Firefox
+input
+	&[type='number']
+		-moz-appearance: textfield
+
+//Убрать свечение кнопок в браузере
+button:active, button:focus, a:active, a:focus
+	outline: none !important
+button::-moz-focus-inner 
+	border: 0 !important
+
+html, 
+body
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+body
+	font-family: "Arimo", sans-serif
+	font-weight: normal
+	font-size: 16px
+
+textarea,
+input,
+	&:focus
+		outline: none
+li
+	list-style-type: none
+section
+	width: 100%
+	height: auto
+
+.btn
+	margin-top: 60px
+	padding: 25px 50px	
+	background: #fea60d
+	color: #000
+	display: inline-block
+	vertical-align: middle
+	text-align: center
+	font-family: "DINPro-Black", sans-serif
+	font-size: 30px
+	border: none
+	border-radius: 3px
+	transition: .3s
+	-webkit-transition: .3s
+.btn
+	&:hover
+		background: #fea60d * 0.8
+/* 	END GENERAL STYLE */
+
+/* HEADER */
+.main_head
+	background: #fff
+	margin: 20px 0
+	.logo
+		display: block
+		line-height: 96px
+	.contacts_wrap
+		line-height: 96px
+	&_contacts
+		padding: 7px 0
+		line-height: 0
+		text-align: right
+		div
+			display: inline-block
+			width: 34px
+			height: 34px
+			border-radius: 600px
+			background: #fea60d
+			i
+				display: block
+				color: #fff
+				font-size: 20px
+				padding: 8px
+		p
+			margin: 0
+			padding-left: 10px
+			display: inline-block
+			font-family: "DINPro-Black", sans-serif
+			font-size: 18px
+	.contacts_mail
+		div
+			display: inline-block
+			width: 34px
+			height: 34px
+			border-radius: 6px
+			background: #fea60d
+/* END HEADER */
+
+/* BANNER BLOCK */
+.banner
+	padding: 60px 0
+	background: url(../img/bg_banner.jpg) no-repeat center center
+	background-size: cover
+	height: 600px
+	text-align: center
+	h1
+		margin: 30px 0 40px 0
+		font-family: "FedraSansPro-Bold", sans-serif
+		color: #fff
+		font-size: 72px
+	span
+		display: block
+		font-family: "FedraSansPro-Book", sans-serif
+		color: #fff
+		font-size: 54px
+		line-height: 1.4
+/* END BANNER BLOCK */
+
+/* INFORMATION BLOCK */
+.information
+	padding-top: 25px
+	background: #f6f9f9
+	text-align: center
+	i
+		font-size: 66px
+		margin-bottom: 15px
+	p
+		font-family: "DINPro", sans-serif
+		font-size: 16px
+		color: #424242
+		margin-bottom: 25px
+
+
+/* END INFORMATION BLOCK */
+
+
+
