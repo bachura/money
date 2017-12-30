@@ -59,6 +59,22 @@ h2 {
   font-family: "FedraSansPro-Book", sans-serif;
   font-size: 48px; }
 
+@media (max-width: 767px) {
+  .btn {
+    font-size: 18px; } }
+@media (max-width: 480px) {
+  .btn {
+    font-size: 16px; }
+
+  h2 {
+    font-size: 24px; }
+
+  .description {
+    font-size: 14px !important; }
+
+  section {
+    padding: 20px 0 !important;
+    margin: 20px 0 !important; } }
 /* 	END GENERAL STYLE */
 /* HEADER */
 .main_head {
@@ -97,6 +113,31 @@ h2 {
     border-radius: 6px;
     background: #fea60d; }
 
+@media (max-width: 767px) {
+  .logo, .main_head_contacts {
+    text-align: center; }
+
+  .main_head .logo {
+    line-height: inherit; }
+    .main_head .logo img {
+      width: 30%; }
+
+  .main_head_contacts p {
+    font-size: 14px; }
+  .main_head_contacts div {
+    width: 24px;
+    height: 24px; }
+    .main_head_contacts div i {
+      font-size: 16px;
+      padding: 4px; }
+
+  .main_head .contacts_mail div {
+    width: 24px;
+    height: 24px; } }
+@media (max-width: 480px) {
+  .main_head .logo img {
+    width: 60%;
+    margin-bottom: 10px; } }
 /* END HEADER */
 /* BANNER BLOCK */
 .banner {
@@ -116,6 +157,21 @@ h2 {
     font-size: 54px;
     line-height: 1.4; }
 
+@media (max-width: 767px) {
+  .banner {
+    height: 500px; }
+    .banner h1 {
+      font-size: 50px; }
+    .banner span {
+      font-size: 34px; } }
+@media (max-width: 480px) {
+  .banner {
+    padding: 20px 0;
+    height: 420px; }
+    .banner h1 {
+      font-size: 36px; }
+    .banner span {
+      font-size: 20px; } }
 /* END BANNER BLOCK */
 /* INFORMATION BLOCK */
 .information {
@@ -130,6 +186,9 @@ h2 {
     color: #424242;
     margin-bottom: 25px; }
 
+@media (max-width: 480px) {
+  .information p {
+    font-size: 14px; } }
 /* END INFORMATION BLOCK */
 /* WE WORK BLOCK */
 .we_work {
@@ -158,6 +217,17 @@ h2 {
       font-family: "DINPro-Black", sans-serif;
       font-size: 21px; }
 
+@media (max-width: 480px) {
+  .we_work h3 {
+    padding-top: 40px;
+    font-size: 18px; }
+
+  .we_work_item {
+    padding-top: 40px; }
+    .we_work_item p {
+      height: 2em;
+      font-size: 16px;
+      padding-top: 10px; } }
 /* END WE WORK BLOCK */
 /* PLAN BLOCK */
 .plan {
@@ -179,6 +249,19 @@ h2 {
       padding: 25px 26px 0 26px;
       line-height: 1.4; }
 
+@media (max-width: 991px) {
+  .plan_item {
+    float: none;
+    padding-top: 60px;
+    display: inline-block;
+    width: 49%; } }
+@media (max-width: 480px) {
+  .plan_item {
+    padding-top: 20px;
+    width: 100%; }
+    .plan_item p {
+      padding-top: 10px;
+      font-size: 18px; } }
 /* END PLAN BLOCK */
 /* STATISTICS BLOCK */
 .statistics {
@@ -207,6 +290,16 @@ h2 {
     .statistics_img_wrap img {
       padding: 20px; }
 
+@media (max-width: 480px) {
+  .statistics_item {
+    padding-top: 20px; }
+    .statistics_item h3 {
+      padding-top: 10px;
+      padding-bottom: 0;
+      font-size: 30px; }
+    .statistics_item h4 {
+      padding-top: 0;
+      font-size: 24px; } }
 /* END STATISTICS BLOCK */
 /* FORM BLOCK */
 .form_block {
@@ -234,6 +327,10 @@ h2 {
       border-radius: 3px;
       font-size: 15px;
       color: #fff; }
+      .form_block form input::-webkit-input-placeholder, .form_block form textarea::-webkit-input-placeholder {
+        font-size: 15px; }
+      .form_block form input:-ms-input-placeholder, .form_block form textarea:-ms-input-placeholder {
+        font-size: 15px; }
       .form_block form input::placeholder, .form_block form textarea::placeholder {
         font-size: 15px; }
     .form_block form textarea {
@@ -255,6 +352,17 @@ h2 {
 .form_btn_wrap {
   text-align: right; }
 
-/* END FORM BLOCK */
+@media (max-width: 480px) {
+  .form_block {
+    min-height: 500px;
+    padding-top: 40px; }
+    .form_block h2 {
+      font-size: 28px; }
+    .form_block form {
+      padding-top: 20px; }
+    .form_block .description {
+      padding-top: 10px; }
 
-/*# sourceMappingURL=main.css.map */
+  .form_btn_wrap {
+    text-align: center; } }
+/* END FORM BLOCK */

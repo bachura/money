@@ -62,6 +62,20 @@ h2
 	padding: 0
 	font-family: "FedraSansPro-Book", sans-serif
 	font-size: 48px
+
+@media (max-width: 767px)
+	.btn
+		font-size: 18px
+@media (max-width: 480px)
+	.btn
+		font-size: 16px
+	h2
+		font-size: 24px
+	.description
+		font-size: 14px !important
+	section
+		padding: 20px 0 !important
+		margin: 20px 0 !important
 /* 	END GENERAL STYLE */
 
 /* HEADER */
@@ -101,6 +115,32 @@ h2
 			height: 34px
 			border-radius: 6px
 			background: #fea60d
+
+@media (max-width: 767px)
+	.logo, .main_head_contacts
+		text-align: center
+	.main_head
+		.logo
+			line-height: inherit
+			img
+				width: 30%
+	.main_head_contacts
+		p
+			font-size: 14px
+		div
+			width: 24px
+			height: 24px
+			i
+				font-size: 16px
+				padding: 4px
+	.main_head .contacts_mail div
+		width: 24px
+		height: 24px	
+
+@media (max-width: 480px)
+	.main_head .logo img
+		width: 60%
+		margin-bottom: 10px
 /* END HEADER */
 
 /* BANNER BLOCK */
@@ -120,6 +160,23 @@ h2
 		color: #fff
 		font-size: 54px
 		line-height: 1.4
+
+@media (max-width: 767px)
+	.banner 
+		height: 500px
+		h1
+			font-size: 50px
+		span
+			font-size: 34px
+@media (max-width: 480px)
+	.banner 
+		padding: 20px 0
+		height: 420px
+		h1
+			font-size: 36px
+		span
+			font-size: 20px
+
 /* END BANNER BLOCK */
 
 /* INFORMATION BLOCK */
@@ -134,6 +191,10 @@ h2
 		font-size: 16px
 		color: #424242
 		margin-bottom: 25px
+
+@media (max-width: 480px)
+	.information p
+		font-size: 14px
 /* END INFORMATION BLOCK */
 
 /* WE WORK BLOCK */
@@ -162,6 +223,17 @@ h2
 			line-height: 1.3
 			font-family: "DINPro-Black", sans-serif
 			font-size: 21px
+
+@media (max-width: 480px)
+	.we_work h3
+		padding-top: 40px
+		font-size: 18px
+	.we_work_item
+		padding-top: 40px
+		p
+			height: 2em
+			font-size: 16px
+			padding-top: 10px
 /* END WE WORK BLOCK */
 
 /* PLAN BLOCK */
@@ -183,6 +255,20 @@ h2
 			font-size: 23px
 			padding: 25px 26px 0 26px
 			line-height: 1.4
+
+@media (max-width: 991px)
+	.plan_item
+		float: none
+		padding-top: 60px
+		display: inline-block
+		width: 49%
+@media (max-width: 480px)
+	.plan_item
+		padding-top: 20px
+		width: 100%
+		p
+			padding-top: 10px
+			font-size: 18px
 /* END PLAN BLOCK */
 
 /* STATISTICS BLOCK */
@@ -211,6 +297,17 @@ h2
 		border-radius: 600px
 		img
 			padding: 20px
+
+@media (max-width: 480px)
+	.statistics_item
+		padding-top: 20px
+		h3
+			padding-top: 10px
+			padding-bottom: 0
+			font-size: 30px
+		h4
+			padding-top: 0
+			font-size: 24px
 /* END STATISTICS BLOCK */
 
 /* FORM BLOCK */
@@ -259,4 +356,16 @@ h2
 .form_btn_wrap
 	text-align: right
 
+@media (max-width: 480px)
+	.form_block
+		min-height: 500px
+		padding-top: 40px
+		h2
+			font-size: 28px
+		form
+			padding-top: 20px
+		.description
+			padding-top: 10px
+	.form_btn_wrap
+		text-align: center
 /* END FORM BLOCK */
