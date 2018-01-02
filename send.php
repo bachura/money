@@ -16,7 +16,7 @@ $message = urldecode($message);
 $message = trim($message);
 
 
-if (mail("bachura95@gmail.com", "Вернем деньги", "Имя: ".$name. "\nE-mail: ".$email. "\nСообщение: " .$message , "From: bachura95@gmail.com \r\n"))
+if (mail("new.lead2017new@gmail.com", "Вернем деньги", "Имя: ".$name. "\nE-mail: ".$email. "\nСообщение: " .$message , "From: new.lead2017new@gmail.com \r\n"))
 	{	echo "Сообщение отправлено, все хорошо!";
 		header("Location: ./index.html");
 	} else { 
