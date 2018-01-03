@@ -36,22 +36,24 @@ section {
   text-align: center; }
 
 .btn {
-  margin-top: 60px;
-  padding: 25px 50px;
-  background: #fea60d;
+  margin-top: 60px !important;
+  padding: 25px 50px !important;
+  background: #fea60d !important;
   color: #000;
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: middle;
   text-align: center;
   font-family: "DINPro-Black", sans-serif;
   font-size: 30px;
-  border: none;
+  border: none !important;
   border-radius: 3px;
-  transition: 0.3s;
-  -webkit-transition: 0.3s; }
+  transition: 0.3s !important;
+  -webkit-transition: 0.3s !important;
+  height: auto !important;
+  width: auto !important; }
 
 .btn:hover {
-  background: #cb850a; }
+  background: #cb850a !important; }
 
 h2 {
   margin: 0;
@@ -79,7 +81,7 @@ h2 {
 /* HEADER */
 .main_head {
   background: #fff;
-  margin: 20px 0; }
+  padding: 20px 0; }
   .main_head .logo {
     display: block;
     line-height: 96px; }
@@ -306,7 +308,7 @@ h2 {
   padding: 60px 0;
   background: url(../img/bg_form.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 600px; }
+  min-height: 300px; }
   .form_block h2 {
     font-size: 41px;
     color: #fff; }
@@ -316,45 +318,47 @@ h2 {
     font-family: "DINPro", sans-serif;
     font-size: 15px;
     color: #999999; }
-  .form_block form {
-    padding-top: 50px; }
-    .form_block form input, .form_block form textarea {
-      margin-bottom: 20px;
-      padding: 15px 20px;
-      width: 100%;
-      background: transparent;
-      border: 1px solid #999999;
-      border-radius: 3px;
-      font-size: 15px;
-      color: #fff; }
-      .form_block form input::-webkit-input-placeholder, .form_block form textarea::-webkit-input-placeholder {
-        font-size: 15px; }
-      .form_block form input:-ms-input-placeholder, .form_block form textarea:-ms-input-placeholder {
-        font-size: 15px; }
-      .form_block form input::placeholder, .form_block form textarea::placeholder {
-        font-size: 15px; }
-    .form_block form textarea {
-      resize: none;
-      height: 160px; }
-    .form_block form .form_btn {
-      padding: 8px 30px 10px 30px;
-      background: transparent;
-      border: 1px solid #15a4fa;
-      border-radius: 3px;
-      color: #fff;
-      font-family: "DINPro-Black", sans-serif;
-      font-size: 18px;
-      transition: 0.3s;
-      -webkit-transition: 0.3s; }
-      .form_block form .form_btn:hover {
-        background: #15a4fa; }
+  .form_block .btn {
+    margin-top: 50px !important;
+    padding: 8px 30px 10px 30px !important;
+    width: 80% !important;
+    font-family: "DINPro-Black", sans-serif !important;
+    font-size: 22px !important; }
 
+/* 	form
+ * padding-top: 50px
+ * input, textarea
+ * 	margin-bottom: 20px
+ * 	padding: 15px 20px
+ * 	width: 100%
+ * 	background: transparent
+ * 	border: 1px solid #999999
+ * 	border-radius: 3px
+ * 	font-size: 15px
+ * 	color: #fff
+ * 	&::placeholder
+ * 		font-size: 15px
+ * textarea
+ * 	resize: none
+ * 	height: 160px
+ * .form_btn
+ * 	padding: 8px 30px 10px 30px
+ * 	background: transparent
+ * 	border: 1px solid #15a4fa
+ * 	border-radius: 3px
+ * 	color: #fff
+ * 	font-family: "DINPro-Black", sans-serif
+ * 	font-size: 18px
+ * 	transition: .3s
+ * 	-webkit-transition: .3s
+ * 	&:hover
+ * 		background: #15a4fa */
 .form_btn_wrap {
   text-align: right; }
 
 @media (max-width: 480px) {
   .form_block {
-    min-height: 500px;
+    min-height: 200px;
     padding-top: 40px; }
     .form_block h2 {
       font-size: 28px; }
@@ -366,3 +370,42 @@ h2 {
   .form_btn_wrap {
     text-align: center; } }
 /* END FORM BLOCK */
+/* SUCCESS PAGE, NOT_LUCK PAGE */
+.banner_success {
+  padding: 0;
+  height: 130px; }
+
+.success_block {
+  margin-top: 100px;
+  text-align: center; }
+  .success_block h2 {
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 34px;
+    color: #1c1c1c; }
+  .success_block span {
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #1c1c1c; }
+  .success_block .btn {
+    padding: 20px 60px; }
+
+.success_check {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: #fea60d;
+  border: none;
+  border-radius: 600px; }
+  .success_check i {
+    font-size: 38px;
+    color: #fff;
+    padding: 6px 7px; }
+
+.success_not_luck {
+  background: #fe400d; }
+
+/* END SUCCESS PAGE, NOT_LUCK PAGE */
+
+/*# sourceMappingURL=main.css.map */
